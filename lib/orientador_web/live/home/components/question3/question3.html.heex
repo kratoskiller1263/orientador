@@ -1,0 +1,28 @@
+<div class="column is-8 is-offset-2 register">
+    <div class="columns">
+        <div class="column left" style="border-right: 5px solid var(--background);">
+            <h1 class="title" style="font-weight: 800; letter-spacing: -2px; color: var(--brandColor); font-size: 1.5rem;">¡Asombroso!</h1>
+            <h2 class="subtitle colored" style="font-weight: 500; margin-top: 1rem !important; letter-spacing: -1px; color: var(--brandColor); font-size: 1rem;">Pregunta 3 de 4: ¿Prefieres trabajar en equipo o de manera independiente?</h2>
+            <p style="color: var(--textDark); font-size: 1rem;" class="description">Contexto:
+                ¿Te gustaría tener un trabajo más orientado al contacto con personas o uno que involucre más trabajo técnico o analítico?,
+                ¿Qué valores son importantes para ti en una carrera? (por ejemplo, ayudar a otros, tener estabilidad financiera, creatividad, innovación, etc.)
+                ¿Cuales son tus valores personales?
+            </p>
+
+            <div class="field">
+                <div class="control">
+                    <form>
+                        <textarea phx-target={@myself} phx-change="step:question3" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta más trabajar en..." required autofocus></textarea>
+                    </form>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button value="next" phx-target={@myself} phx-click="step:question3" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

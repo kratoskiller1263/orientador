@@ -1,0 +1,38 @@
+<div class="column is-8 is-offset-2 register">
+    <div class="columns">
+        <div class="column left" style="border-right: 5px solid var(--background);">
+            <h1 class="title" style="font-weight: 800; letter-spacing: -2px; color: var(--brandColor);"><img class="image" width="100px" height="auto" src={~p"/images/uvm.png"} alt="UVM Logo"></h1>
+            <h2 class="subtitle colored" style="font-weight: 500; margin-top: 1rem !important; letter-spacing: -1px; color: var(--brandColor);">Orientador Vocacional GPT</h2>
+            <p style="color: var(--textDark); font-size: 1rem;">
+                ¿No sabes qué carrera elegir?.
+                Nuestros alumnos y profesores de la carrera de <strong><a href="https://www.uvm.cl/ingenieria-civil-informatica/" style="color: var(--brandColor);">Ingeniería Civil Informática</a></strong> han preparado un asistente virtual
+                utilizando las herramientas de inteligencia artificial más sofisticadas.
+
+                Solo responde un par de preguntas y el asistente virtual te podrá orientar.
+            </p>
+        </div>
+        <div class="column right has-text-centered">
+            <h1 class="title" style="font-weight: 800; letter-spacing: -1px; color: var(--brandColor);">¡Comencemos!</h1>
+            <p style="color: var(--textDark); font-size: 1rem;" class="description">Primero necesitamos tu nombre y correo para poder iniciar</p>
+
+            <div class="field">
+                <div class="control">
+                    <form>
+                        <input name="name" phx-target={@myself} phx-change="step:welcome" class="input is-medium" type="text" placeholder="Nombre" autofocus value={@answers.name} required maxlength="50">
+                    </form>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <form>
+                        <input name="email" phx-target={@myself} phx-change="step:welcome" class="input is-medium" type="email" placeholder="Email" value={@answers.email} required>
+                    </form>
+                </div>
+            </div>
+
+            <button value="next" phx-target={@myself} phx-click="step:welcome" class="button is-block is-primary is-fullwidth is-medium">Comenzar</button>
+            <br />
+        </div>
+    </div>
+</div>

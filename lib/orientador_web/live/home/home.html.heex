@@ -1,0 +1,45 @@
+<section class="container">
+        <div class="columns is-multiline">
+
+
+            <.live_component :if={@step == :welcome} module={Welcome} id="welcome" step={@step} answers={@answers} />
+            <.live_component :if={@step == :question1} module={Question1} id="question1" step={@step} answers={@answers} />
+
+            <.live_component :if={@step == :question2} module={Question2} id="question2" step={@step} answers={@answers} />
+            <.live_component :if={@step == :question3} module={Question3} id="question3" step={@step} answers={@answers} />
+
+            <.live_component :if={@step == :question4} module={Question4} id="question4" step={@step} answers={@answers} />
+            <.live_component :if={@step == :loading} module={Loading} id="loading"  />
+            <.live_component :if={@step == :done} module={Done} id="done" result={@result} />
+
+            <div class="column is-8 is-offset-2">
+                <br>
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span> &emsp;
+                            <span class="icon">
+                  <i class="fab fa-facebook"></i>
+                </span> &emsp;
+                            <span class="icon">
+                  <i class="fab fa-instagram"></i>
+                </span> &emsp;
+                            <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span> &emsp;
+                            <span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <small class="level-item" style="color: var(--textLight)">
+                            &copy; &nbsp; <a href="https://www.uvm.cl/ingenieria-civil-informatica/">Ingeniería Civil en Informática</a> · <a href="https://www.uvm.cl">UVM.cl</a>. Todos los derechos reservados.
+                        </small>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,28 @@
+<div class="column is-8 is-offset-2 register">
+    <div class="columns">
+        <div class="column left" style="border-right: 5px solid var(--background);">
+            <h1 class="title" style="font-weight: 800; letter-spacing: -2px; color: var(--brandColor); font-size: 1.5rem;">¡Impecable!</h1>
+            <h2 class="subtitle colored" style="font-weight: 500; margin-top: 1rem !important; letter-spacing: -1px; color: var(--brandColor); font-size: 1rem;">Pregunta 2 de 4: ¿Cómo te ves a ti mismo/a en 5 o 10 años?</h2>
+            <p style="color: var(--textDark); font-size: 1rem;" class="description">Contexto:
+                ¿Qué tipo de trabajo te gustaría tener en ese momento?,
+                ¿Qué tipo de problemas o desafíos te gustaría resolver en tu futura carrera profesional?
+                ¿Que es lo que esperas de hacer en tu area laboral?
+            </p>
+
+            <div class="field">
+                <div class="control">
+                    <form>
+                        <textarea phx-target={@myself} phx-change="step:question2" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me veo trabajando en..." required autofocus></textarea>
+                    </form>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button value="next" phx-target={@myself} phx-click="step:question2" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

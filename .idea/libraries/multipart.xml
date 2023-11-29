@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="multipart" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/multipart/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/multipart/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/multipart/lib" />
+      <root url="file://$PROJECT_DIR$/deps/multipart/lib" />
+    </SOURCES>
+  </library>
+</component>

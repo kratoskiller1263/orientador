@@ -1,0 +1,28 @@
+<div class="column is-8 is-offset-2 register">
+    <div class="columns">
+        <div class="column left">
+            <h1 class="title is-4">¡Excelente!</h1>
+            <h2 class="subtitle colored is-4">Pregunta 4 de 4: ¿Te sientes atraído/a por alguna industria o campo específico?.</h2>
+            <p class="description">Contexto:
+                ¿Hay alguna carrera o campo que siempre hayas considerado, pero que no hayas explorado a fondo?,
+                ¿Qué tan importante es el salario para ti en comparación con otros aspectos de tu futura carrera?
+                ¿Quieres trabajar por pasion o por dinero?
+            </p>
+
+            <div class="field">
+                <div class="control">
+                    <form>
+                        <textarea phx-target={@myself} phx-change="step:question4" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta la industria de..." required autofocus></textarea>
+                    </form>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button value="next" phx-target={@myself} phx-click="step:question4" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
