@@ -1,20 +1,23 @@
 <div class="column is-8 is-offset-2 register">
     <div class="columns">
-        <div class="column left">
+        <div class="column is-two-thirds">
             <h1 class="title is-4">Hola <%= @answers.name %> ¡Cuéntanos un poco sobre ti!</h1>
-            <h2 class="subtitle colored is-4">Pregunta 1 de 4: ¿Qué actividades o temas te apasionan o disfrutas hacer en tu tiempo libre?.</h2>
+            <h2 class="subtitle colored is-4" style="color: black;">Pregunta 1 de 4: ¿Qué actividades o temas te apasionan o disfrutas hacer en tu tiempo libre?.</h2>
             <p class="description">
                 Contexto:
                 ¿Qué tipo de libros, películas, videojuegos o programas de televisión te atraen más?
                 ¿Hay algún tema recurrente en ellos?
                 ¿Qué asignaturas escolares disfrutas más o en las que tienes mejores calificaciones?
-                ¿Que te gusta hacer en tus tiempos libres?
+                ¿Qué te gusta hacer en tus tiempos libres?
             </p>
-
+        </div>
+        <div class="column">
+            <img class="image" width="200px" height="auto" src="https://i.pinimg.com/originals/8c/d1/fb/8cd1fb6e7a244bfa4404ae8b9041ec22.png" alt="Hobby Image">
+        </div>
             <div class="field">
                 <div class="control">
                     <form>
-                        <textarea phx-target={@myself} phx-change="step:question1" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta hacer..." required autofocus></textarea>
+                        <textarea phx-target={@myself} phx-change="step:question1" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta hacer..." required autofocus style="color: black;"></textarea>
                     </form>
                 </div>
             </div>
@@ -24,7 +27,7 @@
                     <button value="next" phx-target={@myself} phx-click="step:question1" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
                 </div>
             </div>
-        </div>
 
     </div>
 </div>
+
