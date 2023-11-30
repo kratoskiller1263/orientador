@@ -1,13 +1,20 @@
 <div class="column is-8 is-offset-2 register">
     <div class="columns">
-        <div class="column left" style="border-right: 5px solid var(--background);">
-            <h1 class="title" style="font-weight: 800; letter-spacing: -2px; color: var(--brandColor);"><img class="image" width="200px" height="auto" src={~p"/images/uvm.png"} alt="UVM Logo"></h1>
-            <h2 class="subtitle colored" style="font-weight: 500; margin-top: 1rem !important; letter-spacing: -1px; color: var(--brandColor);">Orientador Vocacional GPT</h2>
-            <div class="content">
-                <% for item <- @result |> String.split("\n") do %>
-                    <p class="description" style="color: var(--textLight); font-size: 1.15rem; margin-top: 1rem; margin-bottom: 1rem !important;"><%= item %></p>
-                <% end %>
+        <div class="column left">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-1"><img class="image" width="200px" height="auto" src={~p"/images/uvm.png"} alt="UVM Logo"></h1>
+                </div>
+                <div class="column">
+                    <img class="image" width="200px" height="auto" src="https://www.motiongraphicplus.com/wp-content/uploads/2023/09/chat-gpt-logo-png.png" alt="GPT Logo">
+                </div>
             </div>
+            <h2 class="subtitle colored is-4" style="color: black;">Orientador Vocacional GPT.</h2>
+            <%= for item <- @result
+             |> String.split("\n") do %>
+                <p class="description" style="margin-bottom:3%;"><%= item %></p>
+            <% end %>
         </div>
     </div>
 </div>
+
