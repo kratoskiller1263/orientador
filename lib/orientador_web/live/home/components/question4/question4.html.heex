@@ -2,17 +2,20 @@
     <div class="columns">
         <div class="column left">
             <h1 class="title is-4">¡Excelente!</h1>
-            <h2 class="subtitle colored is-4">Pregunta 4 de 4: ¿Te sientes atraído/a por alguna industria o campo específico?.</h2>
+            <h2 class="subtitle colored is-4" style="color: black;">Pregunta 4 de 4: ¿Te sientes atraído/a por alguna industria o campo específico?</h2>
             <p class="description">Contexto:
                 ¿Hay alguna carrera o campo que siempre hayas considerado, pero que no hayas explorado a fondo?,
                 ¿Qué tan importante es el salario para ti en comparación con otros aspectos de tu futura carrera?
-                ¿Quieres trabajar por pasion o por dinero?
+                ¿Quieres trabajar por pasión o por dinero?
             </p>
-
+        </div>
+        <div class="column">
+            <img class="image" width="200px" height="auto" src="https://previews.123rf.com/images/ilixe48/ilixe481905/ilixe48190500530/124957907-bolsa-con-dinero-y-coraz%C3%B3n-de-madera-rojo-en-la-balanza-dinero-versus-concepto-de-amor-pasi%C3%B3n.jpg" alt="Imagen de dinero y amor">
+        </div>
             <div class="field">
                 <div class="control">
                     <form>
-                        <textarea phx-target={@myself} phx-change="step:question4" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta la industria de..." required autofocus></textarea>
+                        <textarea phx-target={@myself} phx-change="step:question4" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta la industria de..." required autofocus style="color: black;"></textarea>
                     </form>
                 </div>
             </div>
@@ -22,7 +25,5 @@
                     <button value="next" phx-target={@myself} phx-click="step:question4" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
                 </div>
             </div>
-        </div>
-
     </div>
 </div>
