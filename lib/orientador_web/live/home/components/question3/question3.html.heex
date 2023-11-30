@@ -6,13 +6,16 @@
             <p style="color: var(--textDark); font-size: 1rem;" class="description">Contexto:
                 ¿Te gustaría tener un trabajo más orientado al contacto con personas o uno que involucre más trabajo técnico o analítico?,
                 ¿Qué valores son importantes para ti en una carrera? (por ejemplo, ayudar a otros, tener estabilidad financiera, creatividad, innovación, etc.)
-                ¿Cuales son tus valores personales?
+                ¿Cuáles son tus valores personales?
             </p>
-
+        </div>
+        <div class="column">
+            <img class="image" width="200px" height="auto" src="https://cdn0.psicologia-online.com/es/posts/9/4/6/que_son_los_valores_religiosos_y_ejemplos_6649_600.jpg" alt="Imagen de valores religiosos">
+        </div>
             <div class="field">
                 <div class="control">
                     <form>
-                        <textarea phx-target={@myself} phx-change="step:question3" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta más trabajar en..." required autofocus></textarea>
+                        <textarea phx-target={@myself} phx-change="step:question3" class="textarea" rows="10" name="answer" maxlength="300" placeholder="Me gusta más trabajar en..." required autofocus style="color: black;"></textarea>
                     </form>
                 </div>
             </div>
@@ -22,7 +25,6 @@
                     <button value="next" phx-target={@myself} phx-click="step:question3" class="button is-block is-primary is-fullwidth is-medium">Siguiente</button>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
